@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Weight Converter</title>
+   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+   <div class="converter">
+      <header>
+         <h1 class="converter__title">
+            Weight Converter
+         </h1>
+      </header>
+      <form action="#" class="form">
+         <select class="form__select selectInput" name="weightSelect">
+            <option>Choose a weight type</option>
+            <option value="1">Pounds</option>
+            <option value="2">Grams</option>
+            <option value="3">Ounces</option>
+            <option value="4">Kilograms</option>
+         </select>
+         <input type="number" class="form__num inputValue" placeholder="Enter weight value" value="0">
+      </form>
+      <section class="output">
+         <!--Grams-->
+         <div class="card card-1" id="gramCard">
+            <h4 class="card__title">Grams:</h4>
+            <div class="gramsOutput"></div>
+         </div>
+         <!--Kilograms-->
+         <div class="card card-2" id="kgCard">
+            <h4 class="card__title">Kilograms:</h4>
+            <div class="kgOutput"></div>
+         </div>
+         <!--Ounces-->
+         <div class="card card-3" id="ounceCard">
+            <h4 class="card__title">Ounces:</h4>
+            <div class="ouncesOutput"></div>
+         </div>
+   
+         <!--Pounds-->
+         <div class="card card-4" id="poundCard">
+            <h4 class="card__title">Pounds:</h4>
+            <div class="poundsOutput"></div>
+         </div>
+   
+      </section>
+   </div>
+   <script src="main.js"></script>
+</body>
+
+</html>

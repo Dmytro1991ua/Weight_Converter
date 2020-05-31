@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to bottom right, #42275a, #734b6d);
+    max-width: 117rem;
+    margin: 0 auto;
+    padding: 0 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.converter {
+    width: 100%;
+    max-width: 50rem;
+    background-color: #333;
+    padding: 4rem 6rem 4rem 3rem;
+    transition: all .5s;
+}
+
+.converter:hover {
+    box-shadow: 1rem 0.7rem 0.2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.converter__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    color: white;
+}
+
+.form {
+    width: 100%;
+}
+
+.form__num {
+    width: 101%;
+    min-height: 3.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1.3rem;
+}
+
+.form__num::placeholder {
+    font-size: 1.4rem;
+    color: grey;
+}
+
+.form__select {
+    width: 100%;
+    min-height: 3.5rem;
+    color: grey;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    width: 100.6%;
+    min-height: 6.5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.card-1 {
+    background-image: linear-gradient(to bottom right, blue, lightblue);
+}
+
+.card-2 {
+    background-image: linear-gradient(to bottom right, green, lightgreen);
+}
+
+.card-3 {
+    background-image: linear-gradient(to bottom right, orange, #ffd8a7);
+}
+
+.card-4 {
+    background-image: linear-gradient(to bottom right, brown, #b5651d);
+}
+
+.card:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.card__title {
+    font-size: 1.6rem;
+}
+
+.gramsOutput,
+.kgOutput,
+.ouncesOutput,
+.poundsOutput {
+    font-size: 1.5rem;
+}
+
+.card__title,
+.gramsOutput,
+.kgOutput,
+.ouncesOutput,
+.poundsOutput {
+    color: white;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .converter__title {
+        font-size: 2rem;
+    }
+
+    .converter {
+        width: 90%;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .converter__title {
+        font-size: 2rem;
+    }
+
+    .form__num {
+        width: 101.5%;
+    }
+}
