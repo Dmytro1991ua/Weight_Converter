@@ -59,7 +59,7 @@ const convert = (selectedBox, val) => {
          gramsOutput.innerHTML = (val / 0.035274).toFixed(4);
          break;
       case 4: // killos to..
-         poundsOutput.innerHTML = (val * 2.2046).toFixed(2); 
+         poundsOutput.innerHTML = (val * 2.2046).toFixed(2);
          ouncesOutput.innerHTML = (val * 35.274).toFixed(2);
          gramsOutput.innerHTML = val * 1000;
          break;
@@ -68,12 +68,13 @@ const convert = (selectedBox, val) => {
 
 //listen for changes in select box
 selectInput.addEventListener("change", (event) => {
+   event.preventDefault();
    weightValue.style.visibility = "visible";
    outputsParent.style.visibility = "visible";
-   
+
    //get a current value in selected option
    let target = event.target.value;
-   
+
    //hide a selected card and display the rest of them
    if (target === "1") {
       selectedBox = 1;
@@ -97,7 +98,7 @@ selectInput.addEventListener("change", (event) => {
 });
 
 //updates converted values on input
-weightValue.addEventListener("input", (event) =>{
+weightValue.addEventListener("input", (event) => {
    let target = event.target.value;
    convert(selectedBox, target);
 });
