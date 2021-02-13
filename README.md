@@ -4,6 +4,4 @@ Hey Everyone. Welcome to my journey as a Front-End Developer where I am striving
 
 ![screenshot-dmytro1991ua-github-io-Weight_Converter-1613231233192](https://user-images.githubusercontent.com/61331410/107854272-8a694e80-6e23-11eb-9d88-fac910db83ba.png)
 
-![screenshot-dmytro1991ua-github-io-Temperature_Converter-1613229654756](https://user-images.githubusercontent.com/61331410/107854249-64dc4500-6e23-11eb-94ea-b2712ad786ab.png)
-
 A link on GitHub pages - https://dmytro1991ua.github.io/Weight_Converter/
